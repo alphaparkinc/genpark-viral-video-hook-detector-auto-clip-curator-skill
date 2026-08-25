@@ -1,0 +1,38 @@
+{
+  "name": "genpark-viral-video-hook-detector-auto-clip-curator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Long-form video analyzer detecting high-engagement emotional hooks and generating formatted short-form video clips.",
+  "author": "genpark",
+  "category": "video-curation",
+  "tags": [
+    "opus-clip",
+    "viral-hook-detector",
+    "auto-reframe",
+    "animated-captions",
+    "short-form-video"
+  ],
+  "inputs": {
+    "source_podcast_video_url": {
+      "type": "string"
+    },
+    "target_clips_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "curation_job_id": {
+      "type": "string"
+    },
+    "viral_clips_curated_count": {
+      "type": "integer"
+    },
+    "highest_virality_score_pct": {
+      "type": "number"
+    },
+    "auto_speaker_reframe_vertical_9_16": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
